@@ -15,7 +15,7 @@ const styles = {
         overflowY: 'none',
     },
     gridTileRooms: {
-        height: '90vh',
+        height: '93vh',
         overflowY: 'auto',
     }
 };
@@ -28,7 +28,7 @@ export default class Body extends React.Component {
                 cellHeight="auto"
                 style={styles.gridList}
                 cols={6}
-                rows={2}
+                rows={1}
             >
                 <GridTile cols={1} style={styles.gridTileRooms}>
                     <ChatList/>

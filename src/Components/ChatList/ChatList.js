@@ -54,6 +54,7 @@ export default class ChatList extends React.Component {
                     {chats.map((chat) => (
                         <ListItem
                             primaryText={chat.title}
+                            secondaryText={Math.floor(Math.random() * 100) + ' days ago'}
                             leftAvatar={<Avatar backgroundColor={getRandomColor()}>{chat.title.charAt(0)}</Avatar>}
                             rightIcon={<CommunicationChatBubble />}
                         />
